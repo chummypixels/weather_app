@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/widgets/weather_tile.dart';
 import 'package:http/http.dart' as http;
 import 'widgets/main_widget.dart';
 import 'dart:async';
 import 'dart:convert';
 
 Future<WeatherInfo> fetchWeather() async {
-  final apiKey = 'f3e9abd8bbc67d324baaa6aa8e0732b1';
+  final apiKey = 'YOUR_API_KEY';
   final requestUrl =
       'https://api.openweathermap.org/data/2.5/weather?q=nsukka&appid=${apiKey}';
 
